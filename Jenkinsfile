@@ -11,7 +11,7 @@ stage("cloning the code"){
      stage ("building an image"){
      steps{
      script{
-       sh'docker build -t forntend-npm:1 .'
+       sh'docker build -t frontend-npm:1 .'
        }
        }
        }
@@ -20,7 +20,7 @@ stage("cloning the code"){
        script{
           sh'''
 	  docker tag frontend-npm:1 venkat0007/frontend-npm:1
-	  docker push venkat0007/forntend-npm:1'''
+	  docker push venkat0007/frontend-npm:1'''
 	  }
 	  }
 	  }
