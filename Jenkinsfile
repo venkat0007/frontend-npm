@@ -4,6 +4,7 @@ stages{
 stage("cloning the code"){
  steps{
  script{
+     cleanWs()
      sh'git clone https://github.com/venkat0007/frontend-npm.git -b main'
      }
      }
