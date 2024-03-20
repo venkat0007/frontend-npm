@@ -13,4 +13,4 @@ steps:
    inputs:
      repository: javaApplication
      command: build
-     Dockerfile: app/Dockerfile
+     Dockerfile: Dockerfile
